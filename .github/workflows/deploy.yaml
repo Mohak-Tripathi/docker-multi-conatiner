@@ -16,7 +16,7 @@ jobs:
       - run: docker build -t rallycoding/multi-client ./client
       - run: docker build -t rallycoding/multi-nginx ./nginx
       - run: docker build -t rallycoding/multi-server ./server
-      - run: docker build -t rallycoding/multi-worker ./worker
+      # - run: docker build -t rallycoding/multi-worker ./worker
 
       - run: docker push rallycoding/multi-client
       - run: docker push rallycoding/multi-nginx
