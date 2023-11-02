@@ -16,12 +16,12 @@ jobs:
       - run: docker build -t mohaktripathi/multi-client ./client
       - run: docker build -t mohaktripathi/multi-nginx ./nginx
       - run: docker build -t mohaktripathi/multi-server ./server
-      # - run: docker build -t mohaktripathi/multi-worker ./worker
+      - run: docker build -t mohaktripathi/multi-worker ./worker
 
       - run: docker push mohaktripathi/multi-client
       - run: docker push mohaktripathi/multi-nginx
       - run: docker push mohaktripathi/multi-server
-      # - run: docker push mohaktripathi/multi-worker
+      - run: docker push mohaktripathi/multi-worker
 
       #  - name: Generate deployment package
       #   run: zip -r deploy.zip . -x '*.git*'
